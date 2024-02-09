@@ -11,9 +11,9 @@ namespace LibHttpClient
     public class HttpClient
     {
         public bool IsException { get; private set; }
-        public Exception Exception { get; private set; }
+        public Exception? Exception { get; private set; }
 
-        public System.Net.Http.HttpResponseMessage HttpResponseMessage { get; private set; }
+        public System.Net.Http.HttpResponseMessage? HttpResponseMessage { get; private set; }
 
         private void Reset()
         {
